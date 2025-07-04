@@ -84,16 +84,31 @@
 					  .gallery {
 						display: flex;
 						flex-wrap: wrap;
-						gap: 20px; /* space between images */
+						gap: 40px; /* space between images */
 						justify-content: center; /* center align */
 						padding: 40px;
-						background-color: #f9f9f9;
+						background-color: #3c2c62;
 					  }
-				  
+					  .gallery1 {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 10px; /* space between images */
+						justify-content: center; /* center align */
+						padding: 10px;
+						background-color: #58387e;
+					  }
 					  .gallery img {
-						width: 400px;
-						height: 300px;
+						width: 300px;
+						height: 500px;
 						object-fit: cover;
+						border-radius: 8px;
+						box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+						transition: transform 0.3s ease;
+					  }
+					  .gallery1 img {
+						width: 400px;
+						height: 400px;
+						object-fit: center;
 						border-radius: 8px;
 						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 						transition: transform 0.3s ease;
@@ -102,16 +117,25 @@
 					  .gallery img:hover {
 						transform: scale(1.05);
 					  }
+					  .gallery1 img:hover {
+						transform: scale(1.05);
+					  }
 					</style>
 				  </head>
 				  <body>
 				  
 					<h2 style="text-align:center;">Image Gallery</h2>
 					<div class="gallery">
-					  <img src="images/product1.jpeg" alt="Image 1">
-					  <img src="images/product2.jpeg" alt="Image 2">
-					  <img src="images/product3.jpeg" alt="Image 3">
+					  <img src="images/image1.png" alt="Image 1">
+					  <img src="images/image2.png" alt="Image 2">
+					  <img src="images/image3.png" alt="Image 3">
 					  
+					</div>
+					<div class="gallery1">
+						<img src="images/product02.png" alt="Image 1">
+						<img src="images/figure1.png" alt="Image 2">
+						<img src="images/figure2.png" alt="Image 3">
+
 					</div>
 
 					</section>
